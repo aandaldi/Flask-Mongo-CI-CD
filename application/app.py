@@ -12,8 +12,8 @@ app = Flask(__name__)
 manager = Manager(app)
 app.config.from_object(config_by_name[config_name])
 mongo = PyMongo(app)
-user_col = mongo.db.user
-user_col.drop()
+# user_col = mongo.db.user
+# user_col.drop()
 
 
 @manager.command
